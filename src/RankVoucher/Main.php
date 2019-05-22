@@ -39,7 +39,7 @@ class Main extends PluginBase implements Listener {
 			
 			if(count($args) < 2) {
 			
-				$sender->sendMessage(TF::BLUE . "Please use: §e/voucher (player) (rank)\nAvailable Ranks:\nReaper, Magna, Titan, Overlord, Omega, Rebirth\nPlugin Made by MonkleeGamer");
+				$sender->sendMessage(TF::BLUE . "Please use: §e/voucher (player) (rank)\nAvailable Ranks:\nVeteran, Supreme, Legacy, Mystical, Legendary, Ultra");
 				return true;
 			}
 			if($sender->hasPermission("voucher.command")) {
@@ -53,54 +53,54 @@ class Main extends PluginBase implements Listener {
 						switch($args[1]) {
 							
 							case 1:
-							case "Reaper":
+							case "Veteran":
 							$book = Item::get(Item::BOOK, 101, 1);
-							$book->setCustomName(TF::BOLD . TF::GREEN . "Reaper Voucher" . PHP_EOL . TF::BLUE . "Click to redeem the " . TF::GREEN . "Reaper" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::GREEN . "Veteran Voucher" . PHP_EOL . TF::BLUE . "Click to redeem the " . TF::GREEN . "Veteran" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
 							break;
 							
 							case 2:
-							case "Magna":
+							case "Supreme":
 							$book = Item::get(Item::BOOK, 102, 1);
-							$book->setCustomName(TF::BOLD . TF::AQUA . "Magna Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::AQUA . "Magna" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::AQUA . "Supreme Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::AQUA . "Supreme" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
 							break;
 							
 							case 3:
-							case "Titan":
+							case "Legacy":
 							$book = Item::get(Item::BOOK, 103, 1);
-							$book->setCustomName(TF::BOLD . TF::RED . "Titan Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::RED . "Titan" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::RED . "Legacy Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::RED . "Legacy" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
 							break;
 							
 							case 4:
-							case "Overlord":
+							case "Mystical":
 							$book = Item::get(Item::BOOK, 104, 1);
-							$book->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Overlord Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::LIGHT_PURPLE . "Overlord" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Mystical Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::LIGHT_PURPLE . "Mystical" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
 							break;
 							
 							case 5:
-							case "Omega":
+							case "Legendary":
 							$book = Item::get(Item::BOOK, 105, 1);
-							$book->setCustomName(TF::BOLD . TF::YELLOW . "Omega Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::YELLOW . "Omega" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::YELLOW . "Legendary Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::YELLOW . "Legendary" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
 							break;
 							
 							case 6:
-							case "Rebirth":
+							case "Ultra":
 							$book = Item::get(Item::BOOK, 106, 1);
-							$book->setCustomName(TF::BOLD . TF::WHITE . "Rebirth Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::WHITE . "Rebirth" . TF::BLUE . " Rank Voucher");
+							$book->setCustomName(TF::BOLD . TF::WHITE . "Ultra Voucher" . PHP_EOL . TF::BLUE . " Click to redeem the " . TF::WHITE . "Ultra" . TF::BLUE . " Rank Voucher");
 							
 							$player->getInventory()->addItem($book);
 							
